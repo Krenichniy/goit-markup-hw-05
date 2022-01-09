@@ -58,6 +58,7 @@ img {
 
   text-decoration: none;
 }
+
 .logo {
   margin-right: 93px;
   padding-top: 24px;
@@ -68,9 +69,11 @@ img {
   font-size: 26px;
   line-height: 1.19;
 }
+
 .logo-part {
   color: var(--hover-text-color);
 }
+
 /* Nav */
 
 .navigation {
@@ -91,10 +94,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .references-link:hover,
 .references-link:focus {
   color: var(--hover-text-color);
 }
+
 .references-link.current {
   color: var(--hover-text-color);
 }
@@ -107,9 +112,11 @@ img {
 .contacts {
   display: flex;
 }
+
 .header-connect {
   margin-left: auto;
 }
+
 .contacts .link {
   color: currentColor;
 
@@ -294,7 +301,7 @@ img {
   margin-bottom: 16px;
 
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   text-align: center;
 }
 
