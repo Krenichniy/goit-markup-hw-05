@@ -74,7 +74,7 @@
           для вашего бизнеса
         </h1>
         <!-- maxwidth = 650px text-align = center вариант переноса текста-->
-        <button type="button" class="button">Заказать услугу</button>
+        <button type="button" data-modal-open class="button">Заказать услугу</button>
       </section>
 
       <!-- Наши главные качества-->
@@ -398,6 +398,15 @@
           </ul>
         </div>
       </section>
+
+      <!-- Модальное окно -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <svg class="close" data-modal-close width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </div>
+      </div>
     </main>
     <!--Футер с контактами-->
     <footer class="footer">
@@ -423,30 +432,36 @@
             <li class="workers-social-item">
               <a href="" class="social-networks-link link"
                 ><svg class="workers-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="workers-social-item">
               <a href="" class="social-networks-link link"
                 ><svg class="workers-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="workers-social-item">
               <a href="" class="social-networks-link link"
                 ><svg class="workers-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="workers-social-item">
               <a href="" class="social-networks-link link"
                 ><svg class="workers-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
