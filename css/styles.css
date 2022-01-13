@@ -86,6 +86,8 @@ img {
 }
 
 .references-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -118,6 +120,8 @@ img {
 }
 
 .contacts .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   color: currentColor;
 
   padding-top: 32px;
@@ -151,6 +155,7 @@ img {
   display: inline-flex;
   align-items: center;
 }
+
 .header-phone {
   fill: currentColor;
   margin-right: 10px;
@@ -183,6 +188,7 @@ img {
 
   text-align: center;
 }
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -263,6 +269,7 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
 }
+
 /* Сотрудники */
 .workers {
   background-color: var(--workers-section-color);
@@ -319,6 +326,9 @@ img {
 }
 
 .workers-social-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   width: 44px;
   height: 44px;
   display: flex;
@@ -355,6 +365,8 @@ img {
 }
 
 .clients-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   display: block;
   padding: 16px 32px;
 
@@ -373,6 +385,8 @@ img {
 /* Кнопка */
 
 .button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
@@ -403,6 +417,7 @@ img {
   padding: 60px 0;
   display: flex;
 }
+
 .footer-contacts {
   margin-right: 70px;
 }
@@ -416,6 +431,7 @@ img {
   line-height: 1.19;
   text-decoration: none;
 }
+
 .location {
   color: var(--primary-white-color);
 
@@ -455,6 +471,8 @@ img {
 }
 
 .social-networks-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 44px;
   height: 44px;
   display: flex;
@@ -478,6 +496,9 @@ img {
 /* Страница Портфолио*/
 /* Кнопки */
 .select-button {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   padding: 6px 22px;
   border: 1px solid transparent;
@@ -493,6 +514,7 @@ img {
 
   cursor: pointer;
 }
+
 .select-button:hover,
 .select-button:focus {
   color: var(--primary-white-color);
@@ -524,6 +546,8 @@ img {
 }
 
 .labors-part {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   flex-basis: calc(100% / 9 -30px);
   margin-left: 30px;
   margin-bottom: 30px;
@@ -589,6 +613,7 @@ hover color parent */
   left: 0;
   width: 100%;
   height: 100%;
+  transition: opacity 250ms, visibility 250ms;
 
   background: rgba(0, 0, 0, 0.2);
 }
@@ -608,16 +633,18 @@ hover color parent */
 }
 
 .close {
+  position: absolute;
   width: 30px;
   height: 30px;
   padding: 6px;
-  margin-left: 490px;
-  margin-top: 8px;
-  margin-right: 8px;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -625,4 +652,5 @@ hover color parent */
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
