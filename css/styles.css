@@ -114,9 +114,13 @@ img {
 
 .current::after {
   content: '';
-  width: 48px;
+  width: 100%;
   height: 4px;
   position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--hover-text-color);
+  border-radius: 2px;
 }
 
 .references-item:not(:last-child) {
