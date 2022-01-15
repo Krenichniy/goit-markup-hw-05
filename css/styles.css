@@ -692,9 +692,7 @@ hover color parent */
 }
 
 .backdrop.is-hidden .modal {
-  top: 50%;
-  left: 50%;
-  transform: scale(0.5) translate(-50%, -50%);
+  transform: translate(150%, -100%) scale(0.5) rotate(180deg);
 }
 .modal {
   position: absolute;
@@ -702,8 +700,8 @@ hover color parent */
   left: 50%;
   min-width: 528px;
   min-height: 581px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 500ms;
 
   background: var(--primary-white-color);
   border-radius: 4px;
